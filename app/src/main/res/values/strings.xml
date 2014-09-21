@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TriangleTypeCalc</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="isoCheckText">Isoceles Check</string>
+    <string name="scaleneCheckText">Scalene Check</string>
+    <string name="creditText">Created by John Nguyen</string>
+    <string name="triTypeText">This is a (Triangle Type)</string>
+    <string name="calcButtonText">Click to calculate triangle type</string>
+    <string name="inputs3Text">Input side 3 here</string>
+    <string name="inputs2Text">Input side 2 here</string>
+    <string name="inputs1Text">Input side 1 here</string>
+    <string name="triDescriptionText">Triangle type viewport</string>
+    <string name="inputError">Please input all sides of the triangle</string>
+    <string name="solveError">These sides cannot belong to a triangle.</string>
+    <string name="isosCheckTrue">This is also an isosceles triangle!</string>
+    <string name="isosCheckFalse">This is not an isosceles triangle!</string>
+    <string name="scaleneCheckTrue">This is also a scalene triangle!</string>
+    <string name="scaleneCheckFalse">This is not an scalene triangle!</string>
+
+</resources>
