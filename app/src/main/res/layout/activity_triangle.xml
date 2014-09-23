@@ -78,10 +78,10 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewTriangle"
         android:contentDescription="@string/triDescriptionText"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/equilateraltri"
+        android:background="@drawable/tcicon"
         android:layout_margin="10dp" />
 
     <TextView
