@@ -72,8 +72,52 @@
         android:id="@+id/triTypeText"
         android:layout_gravity="center_horizontal"
         android:layout_margin="15dp"
-        android:textColor="#90EE90"
+        android:textColor="#FFFFFF"
         />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="With an area of: "
+            android:id="@+id/triAreaTextPre"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#90EE90"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="(Area of Triangle)"
+            android:id="@+id/triAreaTextOutput"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:padding="5dp"
+            android:layout_weight=".5"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=" units squared"
+            android:id="@+id/triAreaTextPost"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#90EE90"
+            android:padding="5dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp" />
+
+        </LinearLayout>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -109,7 +153,9 @@
         android:id="@+id/creditText"
         android:layout_gravity="center_horizontal"
         android:textColor="#FFF"
-        android:layout_marginTop="150dp" />
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp" />
 
 </LinearLayout>
 </ScrollView>

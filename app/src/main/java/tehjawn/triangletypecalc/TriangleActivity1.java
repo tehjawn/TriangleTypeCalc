@@ -25,13 +25,14 @@ public class TriangleActivity1 extends Activity {
                 TextView s2 = (TextView) findViewById(R.id.inputs2);
                 TextView s3 = (TextView) findViewById(R.id.inputs3);
 
+                TextView triAreaTV = (TextView) findViewById(R.id.triAreaTextOutput);
                 TextView triTypeText = (TextView) findViewById(R.id.triTypeText);
                 TextView isosCheckTV = (TextView) findViewById(R.id.isosCheckText);
                 TextView scaleneCheckTV = (TextView) findViewById(R.id.scaleneCheckText);
                 ImageView triPicIV = (ImageView) findViewById(R.id.imageViewTriangle);
 
             //Declares variables and types
-                double inputs1, inputs2, inputs3, triPicImageView = 0;
+                double inputs1, inputs2, inputs3, triPicImageView = 0, triArea;
                 boolean wasSolved;
                 String triangleType;
                 boolean isosCheck, scaleneCheck;
@@ -61,9 +62,13 @@ public class TriangleActivity1 extends Activity {
                     triPicImageView = tSolver.getTriImage();
                     isosCheck = tSolver.checkIsos();
                     scaleneCheck = tSolver.checkScalene();
+                    double mTriArea = tSolver.getTriArea();
+                    String nTriArea = ""+mTriArea;
+                    triAreaTV.setText(nTriArea);
                 } else {
             //If the input was wrong in some way, such as an error in the side lengths, etc., an error message will appear
                     triangleType = "Error!";
+                    triAreaTV.setText("Error!");
                     isosCheck = false;
                     scaleneCheck = false;
                     Toast.makeText(getApplicationContext(), getResources().getString(R.string.solveError), Toast.LENGTH_SHORT).show();

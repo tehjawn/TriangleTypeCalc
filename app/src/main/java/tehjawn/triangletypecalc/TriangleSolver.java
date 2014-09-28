@@ -5,7 +5,11 @@ package tehjawn.triangletypecalc;
 public class TriangleSolver {
 
 //          Constants and Types         //
-    private double s1, s2, s3, triPic;
+    private double s1;
+    private double s2;
+    private double s3;
+    private double triPic;
+    private double triArea;
     private String triType;
     private boolean isoTri, scaleneTri;
 //                                      //
@@ -42,6 +46,7 @@ public class TriangleSolver {
 
     public boolean calcTriType(){
 
+
 //Logic Check___________________________________________________________________
         if ((s1 <= 0.0) || (s2 <= 0.0) || (s3 <= 0.0))      //Checks if sides are greater than 0; if no, program won't work
             return false;                                   //  after all, a side of a triangle can't be less than or equal to zero!
@@ -69,6 +74,10 @@ public class TriangleSolver {
         if (!(s1 == s2) && !(s2 == s3) && !(s3 == s1)){     //Same as Isosceles check but with scale (checks if all three sides have different values)
             scaleneTri = true;
         }
+
+        double triHPerimeter = ((s1 + s2 + s3) / 2);
+        triArea = Math.sqrt(triHPerimeter *((triHPerimeter -s1)*(triHPerimeter -s2)*(triHPerimeter -s3)));
+
         return true;
     }
 //--->                                   ...                                      <---//
@@ -87,6 +96,8 @@ public class TriangleSolver {
     public String getTriType(){return triType; }            //Gets triangle type that was calculated
 
     public double getTriImage(){return triPic; }            //Determines which picture should be shown depending on the triangle type
+
+    public double getTriArea(){return triArea; }            //Gets triangle area that was calculated
 
     public boolean checkIsos(){return isoTri;  }            //Yes/No for if triangle is also an isosceles triangle
 
